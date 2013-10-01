@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://haio.github.io
-title: My Octopress Blog
+title: Aio Blog
 subtitle: A blogging framework for hackers.
-author: Your Name
+author: aio 
 simple_search: http://google.com/search
 description:
 
@@ -19,7 +19,8 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: 
+email_md5: 83dc3e4cf57cb653aefb1a4dab4b4c26
 
 # ----------------------- #
 #    Jekyll & Plugins     #
