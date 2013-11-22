@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://haio.github.io
-title: Aio Blog
-subtitle: A blogging framework for hackers.
-author: aio 
+title: ZhongYu(Aio) Blog
+subtitle: Walking, Thinking and Coding 
+author: ZhongYu
 simple_search: http://google.com/search
-description:
+description: I'm a Node.js developer, love ruby too!
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -64,13 +64,13 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
+github_user: haio
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: aio___
 twitter_tweet_button: true
 
 # Google +1
