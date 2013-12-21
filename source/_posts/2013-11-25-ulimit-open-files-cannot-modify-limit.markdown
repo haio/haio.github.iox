@@ -35,6 +35,30 @@ categories: [ulimit, linux, nofile]
 
 `*`代表除root以外的所有用户，也可以设置为特定用户的名称，`soft`表示软限制，`nofile`表示文件描述符，4096是新的默认值。
 
+## 系统级别的限制
+
+上面说到修改只对与某一个用户有效，Linux还有系统级别的文件描述符的限制，用户级别的设置是不能超过系统级别的。修改系统级的限制可以通
+过`sysctl`命令修改：
+
+```sh
+sysctl -w fs.file-max=1000000
+```
+
+`file-max`代表系统内核最多可以打开的文件描述符数量，如果要设置某个进程可以打开的文件描述符数量，可以通过修改`nr_open`:
+
+```sh
+ sysctl -w fs.nr_open=1000000
+```
+
+使用`sysctl`命令所做的修改也是临时的，要永久修改系统的限制可以通过修改`/proc/sys/fs/`下的文件：
+
+```sh
+echo '1000000' > /proc/sys/fs/file-max
+echo '1000000' > /proc/sys/fs/nr_open
+```
+
+关于`/proc/sys/fs/`目录下各个文件的详细解释，可以阅读这篇文章[fs.txt](http://www.mjmwired.net/kernel/Documentation/sysctl/fs.txt)
+
 *PS:* ，有时候更改完后使用`ulimit -SHn`时仍然会报错，这是需要在`/etc/pam.d/common-session`中加入`session required pam_limits.so`
 *再次PS* ，有时候经过上面的更改后使用`ulimit -n`会看到默认值并没有改变，我在ubuntu中遇到这种情况，解决办法是先使用`su username`登录当前用户，然后
 就可以使用ulimit命令了。原因可能是gnome terminal默认是none-login的，所以我们在配置文件中的修改并没有影响到当前的terminal。
