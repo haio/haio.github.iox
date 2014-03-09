@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: git tag | Zhong Yu's Blog]]></title>
+  <link href="http://haio.github.io/blog/categories/git-tag/atom.xml" rel="self"/>
+  <link href="http://haio.github.io/"/>
+  <updated>2014-03-09T12:53:18+08:00</updated>
+  <id>http://haio.github.io/</id>
+  <author>
+    <name><![CDATA[Zhong Yu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Add and delete Git tag]]></title>
+    <link href="http://haio.github.io/blog/2014/03/05/add-and-delete-git-tag/"/>
+    <updated>2014-03-05T20:09:00+08:00</updated>
+    <id>http://haio.github.io/blog/2014/03/05/add-and-delete-git-tag</id>
+    <content type="html"><![CDATA[<p>Git tag创建和删除指令集</p>
+
+<!-- more -->
+
+
+<h2>创建</h2>
+
+<h3>创建本地tag</h3>
+
+<p><code>sh
+git tag -a tagname description
+或者
+git tag tagname
+</code></p>
+
+<h3>将本地tag提交到服务器</h3>
+
+<p><code>sh
+git push --tag
+</code></p>
+
+<h2>删除</h2>
+
+<h3>删除本地tag</h3>
+
+<p><code>sh
+git tag -d tagname
+</code></p>
+
+<h3>删除服务器上tag</h3>
+
+<p><code>sh
+git push --delete origin tagname
+或者
+git push  origin :refs/tags/tagname
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

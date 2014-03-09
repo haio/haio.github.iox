@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: fork | Zhong Yu's Blog]]></title>
+  <link href="http://haio.github.io/blog/categories/fork/atom.xml" rel="self"/>
+  <link href="http://haio.github.io/"/>
+  <updated>2014-03-09T12:53:18+08:00</updated>
+  <id>http://haio.github.io/</id>
+  <author>
+    <name><![CDATA[Zhong Yu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Update the github fork]]></title>
+    <link href="http://haio.github.io/blog/2013/12/03/update-the-github-fork/"/>
+    <updated>2013-12-03T18:28:00+08:00</updated>
+    <id>http://haio.github.io/blog/2013/12/03/update-the-github-fork</id>
+    <content type="html"><![CDATA[<p>在Fork完一个项目后，有时我们会想要与原项目保持同步，我们可以通过以下步骤来实现：</p>
+
+<!-- more -->
+
+
+<h2>Track Remote</h2>
+
+<p>首先，将原始repo的url加入git remote中：</p>
+
+<p><code>sh
+git remote add upstream git@github.com:user/repo.git
+</code></p>
+
+<h2>Fetch Remote</h2>
+
+<p>然后获取原始repo的代码：</p>
+
+<p><code>sh
+git fetch upstream
+</code></p>
+
+<h2>Rebase</h2>
+
+<p>然后执行git rebase将原项目的改动更新到自己的fork，并且使当前项目中自有的commit位于当前branch的顶端：</p>
+
+<p><code>sh
+git rebase upstream/master
+</code></p>
+
+<p>如果你不想自己在fork中的commits被重写，可以把最后一条命令换为：</p>
+
+<p><code>sh
+git merge upstream/master
+</code></p>
+
+<h2>Push</h2>
+
+<p>最后将更新后的项目push到自己的fork中</p>
+
+<p><code>sh
+git push -f origin master
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

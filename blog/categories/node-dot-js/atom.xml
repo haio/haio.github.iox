@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: node.js | Zhong Yu's Blog]]></title>
+  <link href="http://haio.github.io/blog/categories/node-dot-js/atom.xml" rel="self"/>
+  <link href="http://haio.github.io/"/>
+  <updated>2014-03-09T12:53:18+08:00</updated>
+  <id>http://haio.github.io/</id>
+  <author>
+    <name><![CDATA[Zhong Yu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[64k-conenctions-problem-one-server]]></title>
+    <link href="http://haio.github.io/blog/2013/12/21/64k-conenctions-problem-one-server/"/>
+    <updated>2013-12-21T22:37:00+08:00</updated>
+    <id>http://haio.github.io/blog/2013/12/21/64k-conenctions-problem-one-server</id>
+    <content type="html"><![CDATA[<p>当我们测试tcp服务器的性能时，需要在一个客户机上创建很多个对服务器的socket链接。一个tcp链接的由这几个参数唯一确定：</p>
+
+<!-- more -->
+
+
+<p><code>sh
+本地ip  本地端口    服务端ip    服务端端口
+</code></p>
+
+<p>在同一台客户机上，除了本地端口其他三个参数都是确定的，也就是说有多少的端口就能建立多少个链接。但是端口一个16位的数，所以最多可以有
+2<sup>16</sup>个端口，这就是64K问题。默认情况下用户程序可以使用的端口有可能不是从1024开始，我们可以通过修改配置文件来设置：</p>
+
+<p><code>sh
+echo '1024 65535' &gt; /proc/sys/net/ipv4/ip_local_port_range
+</code></p>
+
+<p>这样我们可以使用的端口数目就是2<sup>16</sup>-1024=63448个。一个很现实的情况是现在我们的机器配置都很强劲了！处理64k个链接根本就是小菜一碟，怎
+样才能最大化的利用现有的资源呢，在同一机器上建立更多的链呢？最简单的发就是在客户机上配置多个ip，这样socket链接就有多个ip可以使用，
+可以建立的链接数就变为num(ip) * 64k。这时候的连接数的限制就变成客户机最大文件描述符了，关于增加系统文件描述符的方法可以参照这篇文
+章<a href="http://haio.github.io/blog/2013/11/25/ulimit-open-files-cannot-modify-limit">http://haio.github.io/blog/2013/11/25/ulimit-open-files-cannot-modify-limit</a> .</p>
+
+<p>在Node.js中，如果我们采用net模块来创建链接，我们只需要设置参数中的localAddress参数就可以方便的绑定本地ip:</p>
+
+<p>```js
+net.createConnection({</p>
+
+<pre><code>host: 'server.com',
+port: '8888',
+localAddress: 'client ip'
+</code></pre>
+
+<p>}, function () {})
+```</p>
+]]></content>
+  </entry>
+  
+</feed>

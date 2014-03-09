@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: linux | Zhong Yu's Blog]]></title>
+  <link href="http://haio.github.io/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://haio.github.io/"/>
+  <updated>2014-03-09T12:53:18+08:00</updated>
+  <id>http://haio.github.io/</id>
+  <author>
+    <name><![CDATA[Zhong Yu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ulimit open files cannot modify limit]]></title>
+    <link href="http://haio.github.io/blog/2013/11/25/ulimit-open-files-cannot-modify-limit/"/>
+    <updated>2013-11-25T18:49:00+08:00</updated>
+    <id>http://haio.github.io/blog/2013/11/25/ulimit-open-files-cannot-modify-limit</id>
+    <content type="html"><![CDATA[<p>在使用Linux时我们经常会遇到文件描述符不够用的情况，特别是在进行网络编程时，这是因为Linux默认给一个用户分配的最大文件描述符数量<code>nofile</code>是1024
+当系统中的文件描述符超过这个数时就会抛出错误。</p>
+
+<!-- more -->
+
+
+<p>要增加文件描述符我们可以使用<code>ulimit</code>命令，<code>ulimit</code>命令的主要用法有
+* 查看系统对当前用户的所有限制 <code>ulimit -a</code>
+* 查看文件描述符的软限制 <code>ulimit -Sn</code>,S表示soft
+* 查看文件描述符的硬限制 <code>ulimit -Hn</code>,H表示hard
+* 设置文件描述符限制 <code>ulimit -SHn 10000</code>, <code>ulimit -Sn 10000</code>, <code>ulimit -Hn 10000</code></p>
+
+<p>应限制一旦被设置了就不能再增加，软限制最多可以增加到和应限制一样的大小，一般应限制大于软限制。</p>
+
+<h2>Root用户</h2>
+
+<p>如果当前用户是root，可以直接用<code>ulimit -SHn 10000</code>来讲文件描述符设置为10000
+这中做法只对当前的会话有效，也就是说当关闭当前的terminal之后又会回到默认值，要永久的更改限制可以参考下面非root用户的做法。</p>
+
+<h2>非root用户</h2>
+
+<p>非root用户执行<code>ulimit -SHn n</code>时，如果n大于系统默认的限制，则会抛出错误：<code>-bash: ulimit: open files: cannot modify limit: 不允许的操作</code>，这是我
+们可以通过修改<code>/etc/security/limits.conf</code>这个配置文件来改变系统的默认限制。在文件的末尾追加一下内容：</p>
+
+<p><code>sh
+* soft nofile 4096
+* hard nofile 4096
+</code></p>
+
+<p><code>*</code>代表除root以外的所有用户，也可以设置为特定用户的名称，<code>soft</code>表示软限制，<code>nofile</code>表示文件描述符，4096是新的默认值。</p>
+
+<h2>系统级别的限制</h2>
+
+<p>上面说到修改只对与某一个用户有效，Linux还有系统级别的文件描述符的限制，用户级别的设置是不能超过系统级别的。修改系统级的限制可以通
+过<code>sysctl</code>命令修改：</p>
+
+<p><code>sh
+sysctl -w fs.file-max=1000000
+</code></p>
+
+<p><code>file-max</code>代表系统内核最多可以打开的文件描述符数量，如果要设置某个进程可以打开的文件描述符数量，可以通过修改<code>nr_open</code>:</p>
+
+<p><code>sh
+ sysctl -w fs.nr_open=1000000
+</code></p>
+
+<p>使用<code>sysctl</code>命令所做的修改也是临时的，要永久修改系统的限制可以通过修改<code>/proc/sys/fs/</code>下的文件：</p>
+
+<p><code>sh
+echo '1000000' &gt; /proc/sys/fs/file-max
+echo '1000000' &gt; /proc/sys/fs/nr_open
+</code></p>
+
+<p>关于<code>/proc/sys/fs/</code>目录下各个文件的详细解释，可以阅读这篇文章<a href="http://www.mjmwired.net/kernel/Documentation/sysctl/fs.txt">fs.txt</a></p>
+
+<p><em>PS:</em> ，有时候更改完后使用<code>ulimit -SHn</code>时仍然会报错，这是需要在<code>/etc/pam.d/common-session</code>中加入<code>session required pam_limits.so</code>
+<em>再次PS</em> ，有时候经过上面的更改后使用<code>ulimit -n</code>会看到默认值并没有改变，我在ubuntu中遇到这种情况，解决办法是先使用<code>su username</code>登录当前用户，然后
+就可以使用ulimit命令了。原因可能是gnome terminal默认是none-login的，所以我们在配置文件中的修改并没有影响到当前的terminal。</p>
+]]></content>
+  </entry>
+  
+</feed>

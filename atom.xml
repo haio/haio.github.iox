@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Zhong Yu's Blog]]></title>
+  <link href="http://haio.github.io/atom.xml" rel="self"/>
+  <link href="http://haio.github.io/"/>
+  <updated>2014-03-09T12:53:18+08:00</updated>
+  <id>http://haio.github.io/</id>
+  <author>
+    <name><![CDATA[Zhong Yu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Add and delete Git tag]]></title>
+    <link href="http://haio.github.io/blog/2014/03/05/add-and-delete-git-tag/"/>
+    <updated>2014-03-05T20:09:00+08:00</updated>
+    <id>http://haio.github.io/blog/2014/03/05/add-and-delete-git-tag</id>
+    <content type="html"><![CDATA[<p>Git tag创建和删除指令集</p>
+
+<!-- more -->
+
+
+<h2>创建</h2>
+
+<h3>创建本地tag</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git tag -a tagname description
+</span><span class='line'>或者
+</span><span class='line'>git tag tagname
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>将本地tag提交到服务器</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git push --tag
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>删除</h2>
+
+<h3>删除本地tag</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git tag -d tagname
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>删除服务器上tag</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git push --delete origin tagname
+</span><span class='line'>或者
+</span><span class='line'>git push  origin :refs/tags/tagname
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Happy New Year]]></title>
+    <link href="http://haio.github.io/blog/2014/01/01/happy-new-year/"/>
+    <updated>2014-01-01T10:45:00+08:00</updated>
+    <id>http://haio.github.io/blog/2014/01/01/happy-new-year</id>
+    <content type="html"><![CDATA[<h2>2013过去了，我很怀念它。</h2>
+
+<!-- more -->
+
+
+<h2>I</h2>
+
+<p>2014了，我依然还在地球上。</p>
+
+<h2>II</h2>
+
+<p>对北京这个城市一直没有好感，但我还坚挺在这，可能是因为有些留恋和期待。刘平阳说北京是个浮躁的城市，工作之后才深有体会，也许城市性格就是这样，只要能找到自己的节奏
+就好。</p>
+
+<h2>III</h2>
+
+<p>毕业后租的房子离学校很近，离公司却不近，但是房租便宜啊，并且偶尔可以找卢小腾蹭饭去。</p>
+
+<h2>IV</h2>
+
+<p>原来北京的地铁可以这样的挤，待了四年居然没有发现这个坑，总之年后远离13号线就对了。</p>
+
+<h2>V</h2>
+
+<p>11月参加了两次大会<a href="http://rubyconfchina.org/">Rubyconf China</a>和<a href="http://jingjs.org/">京JS</a>，这是工作之余最有意义的两件事。</p>
+
+<h2>VI</h2>
+
+<p>有些小伙伴好久没有联系了，大家都在忙各自的事情，好像小威过几天又要考研了，今年一定要拿下武大哦。</p>
+
+<h2>VII</h2>
+
+<p>认识了一堆新朋友，个个充满正能量：：Leon、小猪、杜姐、×鑫、丽姐、Aleen、芮宁、嘻嘻、Icy、Vivi。。等。。等。。最想说的就是 <em>Lucky to meet you</em>。</p>
+
+<h2>VIII</h2>
+
+<p>喝过几次酒，二锅头再也不敢碰了。</p>
+
+<h2>IX</h2>
+
+<p>每天一定会使用的几个互联网产品：微博，微信，知乎，简书，Twitter，当然还有Github和npm，这是必须的哈哈。</p>
+
+<h2>X</h2>
+
+<p>可能是本命年到了，最近很不走运，前几天把钱包搞丢了，所有卡和证都没有了，还好身边有一群土豪可以借钱，支付宝还款哈哈。</p>
+
+<h2>XI</h2>
+
+<p>昨晚被好基友邀约去看电影，结果换到了11点的票，电影没看成，在KFC吃全家桶撑得想吐。。。</p>
+
+<h2>Anyway，感谢2013，感谢所有的人和事。新的一年，要走的路还很长，要做的事情还很多。</h2>
+
+<h1>Happy New Year!</h1>
+
+<p><img src="http://haio.u.qiniudn.com/cat.jpg" width="600" height="200" title="Happy New Year" ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[64k-conenctions-problem-one-server]]></title>
+    <link href="http://haio.github.io/blog/2013/12/21/64k-conenctions-problem-one-server/"/>
+    <updated>2013-12-21T22:37:00+08:00</updated>
+    <id>http://haio.github.io/blog/2013/12/21/64k-conenctions-problem-one-server</id>
+    <content type="html"><![CDATA[<p>当我们测试tcp服务器的性能时，需要在一个客户机上创建很多个对服务器的socket链接。一个tcp链接的由这几个参数唯一确定：</p>
+
+<!-- more -->
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>本地ip  本地端口    服务端ip    服务端端口
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在同一台客户机上，除了本地端口其他三个参数都是确定的，也就是说有多少的端口就能建立多少个链接。但是端口一个16位的数，所以最多可以有
+2<sup>16</sup>个端口，这就是64K问题。默认情况下用户程序可以使用的端口有可能不是从1024开始，我们可以通过修改配置文件来设置：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">echo</span> <span class="s1">&#39;1024 65535&#39;</span> &gt; /proc/sys/net/ipv4/ip_local_port_range
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这样我们可以使用的端口数目就是2<sup>16</sup>-1024=63448个。一个很现实的情况是现在我们的机器配置都很强劲了！处理64k个链接根本就是小菜一碟，怎
+样才能最大化的利用现有的资源呢，在同一机器上建立更多的链呢？最简单的发就是在客户机上配置多个ip，这样socket链接就有多个ip可以使用，
+可以建立的链接数就变为num(ip) * 64k。这时候的连接数的限制就变成客户机最大文件描述符了，关于增加系统文件描述符的方法可以参照这篇文
+章<a href="http://haio.github.io/blog/2013/11/25/ulimit-open-files-cannot-modify-limit">http://haio.github.io/blog/2013/11/25/ulimit-open-files-cannot-modify-limit</a> .</p>
+
+<p>在Node.js中，如果我们采用net模块来创建链接，我们只需要设置参数中的localAddress参数就可以方便的绑定本地ip:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">net</span><span class="p">.</span><span class="nx">createConnection</span><span class="p">({</span>
+</span><span class='line'>    <span class="nx">host</span><span class="o">:</span> <span class="s1">&#39;server.com&#39;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">port</span><span class="o">:</span> <span class="s1">&#39;8888&#39;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">localAddress</span><span class="o">:</span> <span class="s1">&#39;client ip&#39;</span>
+</span><span class='line'><span class="p">},</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{})</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Update the github fork]]></title>
+    <link href="http://haio.github.io/blog/2013/12/03/update-the-github-fork/"/>
+    <updated>2013-12-03T18:28:00+08:00</updated>
+    <id>http://haio.github.io/blog/2013/12/03/update-the-github-fork</id>
+    <content type="html"><![CDATA[<p>在Fork完一个项目后，有时我们会想要与原项目保持同步，我们可以通过以下步骤来实现：</p>
+
+<!-- more -->
+
+
+<h2>Track Remote</h2>
+
+<p>首先，将原始repo的url加入git remote中：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git remote add upstream git@github.com:user/repo.git
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Fetch Remote</h2>
+
+<p>然后获取原始repo的代码：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git fetch upstream
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Rebase</h2>
+
+<p>然后执行git rebase将原项目的改动更新到自己的fork，并且使当前项目中自有的commit位于当前branch的顶端：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git rebase upstream/master
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>如果你不想自己在fork中的commits被重写，可以把最后一条命令换为：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git merge upstream/master
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Push</h2>
+
+<p>最后将更新后的项目push到自己的fork中</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git push -f origin master
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ulimit open files cannot modify limit]]></title>
+    <link href="http://haio.github.io/blog/2013/11/25/ulimit-open-files-cannot-modify-limit/"/>
+    <updated>2013-11-25T18:49:00+08:00</updated>
+    <id>http://haio.github.io/blog/2013/11/25/ulimit-open-files-cannot-modify-limit</id>
+    <content type="html"><![CDATA[<p>在使用Linux时我们经常会遇到文件描述符不够用的情况，特别是在进行网络编程时，这是因为Linux默认给一个用户分配的最大文件描述符数量<code>nofile</code>是1024
+当系统中的文件描述符超过这个数时就会抛出错误。</p>
+
+<!-- more -->
+
+
+<p>要增加文件描述符我们可以使用<code>ulimit</code>命令，<code>ulimit</code>命令的主要用法有
+* 查看系统对当前用户的所有限制 <code>ulimit -a</code>
+* 查看文件描述符的软限制 <code>ulimit -Sn</code>,S表示soft
+* 查看文件描述符的硬限制 <code>ulimit -Hn</code>,H表示hard
+* 设置文件描述符限制 <code>ulimit -SHn 10000</code>, <code>ulimit -Sn 10000</code>, <code>ulimit -Hn 10000</code></p>
+
+<p>应限制一旦被设置了就不能再增加，软限制最多可以增加到和应限制一样的大小，一般应限制大于软限制。</p>
+
+<h2>Root用户</h2>
+
+<p>如果当前用户是root，可以直接用<code>ulimit -SHn 10000</code>来讲文件描述符设置为10000
+这中做法只对当前的会话有效，也就是说当关闭当前的terminal之后又会回到默认值，要永久的更改限制可以参考下面非root用户的做法。</p>
+
+<h2>非root用户</h2>
+
+<p>非root用户执行<code>ulimit -SHn n</code>时，如果n大于系统默认的限制，则会抛出错误：<code>-bash: ulimit: open files: cannot modify limit: 不允许的操作</code>，这是我
+们可以通过修改<code>/etc/security/limits.conf</code>这个配置文件来改变系统的默认限制。在文件的末尾追加一下内容：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>* soft nofile 4096
+</span><span class='line'>* hard nofile 4096
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>*</code>代表除root以外的所有用户，也可以设置为特定用户的名称，<code>soft</code>表示软限制，<code>nofile</code>表示文件描述符，4096是新的默认值。</p>
+
+<h2>系统级别的限制</h2>
+
+<p>上面说到修改只对与某一个用户有效，Linux还有系统级别的文件描述符的限制，用户级别的设置是不能超过系统级别的。修改系统级的限制可以通
+过<code>sysctl</code>命令修改：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>sysctl -w fs.file-max<span class="o">=</span>1000000
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>file-max</code>代表系统内核最多可以打开的文件描述符数量，如果要设置某个进程可以打开的文件描述符数量，可以通过修改<code>nr_open</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'> sysctl -w fs.nr_open<span class="o">=</span>1000000
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>使用<code>sysctl</code>命令所做的修改也是临时的，要永久修改系统的限制可以通过修改<code>/proc/sys/fs/</code>下的文件：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">echo</span> <span class="s1">&#39;1000000&#39;</span> &gt; /proc/sys/fs/file-max
+</span><span class='line'><span class="nb">echo</span> <span class="s1">&#39;1000000&#39;</span> &gt; /proc/sys/fs/nr_open
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>关于<code>/proc/sys/fs/</code>目录下各个文件的详细解释，可以阅读这篇文章<a href="http://www.mjmwired.net/kernel/Documentation/sysctl/fs.txt">fs.txt</a></p>
+
+<p><em>PS:</em> ，有时候更改完后使用<code>ulimit -SHn</code>时仍然会报错，这是需要在<code>/etc/pam.d/common-session</code>中加入<code>session required pam_limits.so</code>
+<em>再次PS</em> ，有时候经过上面的更改后使用<code>ulimit -n</code>会看到默认值并没有改变，我在ubuntu中遇到这种情况，解决办法是先使用<code>su username</code>登录当前用户，然后
+就可以使用ulimit命令了。原因可能是gnome terminal默认是none-login的，所以我们在配置文件中的修改并没有影响到当前的terminal。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tools that make web dev more productive]]></title>
+    <link href="http://haio.github.io/blog/2013/11/22/tools-that-make-web-dev-more-productive/"/>
+    <updated>2013-11-22T22:02:00+08:00</updated>
+    <id>http://haio.github.io/blog/2013/11/22/tools-that-make-web-dev-more-productive</id>
+    <content type="html"><![CDATA[<p><img src="http://haio.u.qiniudn.com/toolset.png" width="600" height="200" title="Tools that make web dev more productive" ></p>
+
+<h1>Grunt</h1>
+
+<p><a href="http://gruntjs.com">Grunt</a>是一个Javascript写的任务管理工具(Tasks Runner)。在Web开发中，出了写代码之外，我们还有一序
+列的任务要做，比如:</p>
+
+<!-- more -->
+
+
+<ul>
+<li><strong>minification</strong> javascript,css,html代码的压缩</li>
+<li><strong>compilation</strong> .less,.sass,.coffee等文件编译</li>
+<li><strong>testing</strong> 单元测试，集成测试，各种测试</li>
+<li><strong>linting</strong> js linting
+&hellip;&hellip;</li>
+</ul>
+
+
+<p>以前，这些任务都分散在不同小任务中，我们也有很多工具来&#8217;自动化&#8217;这些任务，比如javaer有<code>maven</code>以及一堆xml代码搭成的<code>ant</code>
+,这里就不细说了，实在感兴趣的可以去Google学习下。Grunt相比他们来说进步了很多，它更加的简易，强大和可扩展，你几乎可以
+找到一切你想要或不想要的任务plugin来加速你的开发流程，当然你也可以很方面的编写自己的插件。并且在Grunt中你不需要写
+shell，不需要写xml，只需要写我们最爱的JSON和Javascript。</p>
+
+<h2>Install grunt CLI</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">npm</span> <span class="nx">install</span> <span class="o">-</span><span class="nx">g</span> <span class="nx">grunt</span><span class="o">-</span><span class="nx">cli</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>安装完<code>gurnt-cli</code>之后<code>grunt</code>就成为你系统中的可执行命令了，他并没有安装了任何版本的grunt，当你执行<code>grunt</code>时候它会在当
+前目录下寻找已有的grunt来跑定义好的任务。</p>
+
+<h2>使用Grunt</h2>
+
+<h3>安装Grunt</h3>
+
+<p>Grunt本身也是一个<code>npm package</code>，由于只是开发中使用，所以我们可以将它安装在devDependencies中：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">grunt</span> <span class="o">--</span><span class="nx">save</span><span class="o">-</span><span class="nx">dev</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后我们会安装一些常用的grunt插件，比如jshint,uglify等</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">grunt</span><span class="o">-</span><span class="nx">contrib</span><span class="o">-</span><span class="nx">jshint</span> <span class="o">--</span><span class="nx">save</span><span class="o">-</span><span class="nx">dev</span>
+</span><span class='line'><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">grunt</span><span class="o">-</span><span class="nx">contrib</span><span class="o">-</span><span class="nx">uglify</span> <span class="o">--</span><span class="nx">save</span><span class="o">-</span><span class="nx">dev</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>之后我们就可以来构建自己的Grunt任务了，Grunt的所有要运行的任务包含在一个叫<code>Gruntfile.js</code>的文件中</p>
+
+<h3>Gruntfile.js</h3>
+
+<p>Gruntfile.js由下面几部分组成：</p>
+
+<ul>
+<li>The &ldquo;wrapper&rdquo; function</li>
+<li>Project and task configuration</li>
+<li>Loading Grunt plugins and tasks</li>
+<li>Custom tasks</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">grunt</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">// Project configuration.</span>
+</span><span class='line'>  <span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
+</span><span class='line'>    <span class="nx">pkg</span><span class="o">:</span> <span class="nx">grunt</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">readJSON</span><span class="p">(</span><span class="s1">&#39;package.json&#39;</span><span class="p">),</span>
+</span><span class='line'>    <span class="nx">uglify</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">banner</span><span class="o">:</span> <span class="s1">&#39;/*! &lt;%= pkg.name %&gt; &lt;%= grunt.template.today(&quot;yyyy-mm-dd&quot;) %&gt; */\n&#39;</span>
+</span><span class='line'>      <span class="p">},</span>
+</span><span class='line'>      <span class="nx">build</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">src</span><span class="o">:</span> <span class="s1">&#39;src/&lt;%= pkg.name %&gt;.js&#39;</span><span class="p">,</span>
+</span><span class='line'>        <span class="nx">dest</span><span class="o">:</span> <span class="s1">&#39;build/&lt;%= pkg.name %&gt;.min.js&#39;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">});</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">// Load the plugin that provides the &quot;uglify&quot; task.</span>
+</span><span class='line'>  <span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="s1">&#39;grunt-contrib-uglify&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">// Default task(s).</span>
+</span><span class='line'>  <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;uglify&#39;</span><span class="p">]);</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Wrapper function</h3>
+
+<p>Grunt是由Node.js写的，从它的wrapper函数可以看出Grunt是被放到一个闭包中然后赋给module.exports供外部使用</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">grunt</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
+</span><span class='line'>        <span class="c1">// tasks </span>
+</span><span class='line'>    <span class="p">});</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Project and task configuration</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
+</span><span class='line'>  <span class="nx">pkg</span><span class="o">:</span> <span class="nx">grunt</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">readJSON</span><span class="p">(</span><span class="s1">&#39;package.json&#39;</span><span class="p">),</span>
+</span><span class='line'>  <span class="nx">uglify</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">banner</span><span class="o">:</span> <span class="s1">&#39;/*! &lt;%= pkg.name %&gt; &lt;%= grunt.template.today(&quot;yyyy-mm-dd&quot;) %&gt; */\n&#39;</span>
+</span><span class='line'>    <span class="p">},</span>
+</span><span class='line'>    <span class="nx">build</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">src</span><span class="o">:</span> <span class="s1">&#39;src/&lt;%= pkg.name %&gt;.js&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">dest</span><span class="o">:</span> <span class="s1">&#39;build/&lt;%= pkg.name %&gt;.min.js&#39;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>首先，<code>grunt.file.readJSON('package.json')</code>获取了当前项目的配置信息，比如项目的名字<code>pkg.name</code>,然后是任务的定义，这里
+以<code>uglify</code>为例，<code>uglify</code>是任务的名字，<code>options</code>中定义了要传给当前任务的一些参数或者配置信息，<code>build</code>是子任务的名字，
+<code>src</code>和<code>dest</code>分别用来设置子任务的参数。
+完成以上配置之后，我们既有一个叫做uglify:build的任务可以使用了。</p>
+
+<h3>Loading Grunt plugins and tasks</h3>
+
+<p>要运行定义好的任务，我们就可能需要加载相应的插件，加载已安装的uglify插件：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="s1">&#39;grunt-contrib-uglify&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Custom tasks</h3>
+
+<p>要执行上面定义好的uglify任务，只需要执行：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">grunt</span> <span class="nx">uglify</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>我们也可以定义默认的任务</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="c1">// Default task(s).</span>
+</span><span class='line'><span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;uglify&#39;</span><span class="p">]);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>['uglify']</code>里可以包含一序列的其他任务，现在要执行uglify任务，我们可以执行<code>grunt default</code>或者直接<code>grunt</code></p>
+
+<p>我们也可以直接在Gruntfile.js中自定义任务，如</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">&#39;custom&#39;</span><span class="p">,</span> <span class="s1">&#39;This is a custom task&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;custom!&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Grunt就说到这里，需要更多的干货可以看<a href="http://gruntjs.com/">官方文档</a>或<a href="https://github.com/gruntjs">Github</a></p>
+
+<h1>Bower</h1>
+
+<p><a href="http://bower.io/">Bower</a> is a package manager for the web. Bower是twitter推出的一个前端包管理工具，对于Javascript来
+说，后端Node.js已经有了npm，Bower就是一个前端的npm，她的语法也是和npm一致的。</p>
+
+<h2>Install Bower</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">bower</span> <span class="o">-</span><span class="nx">g</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Usage</h2>
+
+<h3>bower init</h3>
+
+<p>初始化一个bower.json文件, <code>bower init</code></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span>
+</span><span class='line'>  <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;0.0.0&quot;</span><span class="p">,</span>
+</span><span class='line'>  <span class="s2">&quot;authors&quot;</span><span class="o">:</span> <span class="p">[</span>
+</span><span class='line'>    <span class="s2">&quot;aio &lt;mockingror@gmail.com&gt;&quot;</span>
+</span><span class='line'>  <span class="p">],</span>
+</span><span class='line'>  <span class="s2">&quot;description&quot;</span><span class="o">:</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span>
+</span><span class='line'>  <span class="s2">&quot;main&quot;</span><span class="o">:</span> <span class="s2">&quot;index.js&quot;</span><span class="p">,</span>
+</span><span class='line'>  <span class="s2">&quot;keywords&quot;</span><span class="o">:</span> <span class="p">[</span>
+</span><span class='line'>    <span class="s2">&quot;test&quot;</span>
+</span><span class='line'>  <span class="p">],</span>
+</span><span class='line'>  <span class="s2">&quot;license&quot;</span><span class="o">:</span> <span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
+</span><span class='line'>  <span class="s2">&quot;private&quot;</span><span class="o">:</span> <span class="kc">true</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>bower install</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">bower</span> <span class="nx">install</span> <span class="nx">jquery</span> <span class="o">--</span><span class="nx">save</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>bower uninstall</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">bower</span> <span class="nx">uninstall</span> <span class="nx">jquery</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>MORE&hellip;</h3>
+
+<p>bower search|register</p>
+
+<h1>Yeoman</h1>
+
+<p><a href="http://yeoman.io/">Yeoman</a>是一个Node.js项目生成工具，与其说是一个工具，它更是一个workflow，Yeoman整合了grunt和bower
+，运用了大量的web开发最佳实践，为开发者打造一个更好更高效的workflow</p>
+
+<h2>Install Yeoman</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">npm</span> <span class="nx">install</span> <span class="o">-</span><span class="nx">g</span> <span class="nx">yo</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>yo将自动为你安装好grunt和bower，所以上面说道的grunt和bower的安装方法都可以忘记啦，^_^.</p>
+
+<h2>Install Generator</h2>
+
+<p>Yeoman提供了一序列的生成器，一个生成器为你生成特定类型的项目，比如说一个普通的web项目，一个mobile项目，一个angular项
+目，以web项目为例，首先需要安装相应的generator</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">npm</span> <span class="nx">install</span> <span class="o">-</span><span class="nx">g</span> <span class="nx">generator</span><span class="o">-</span><span class="nx">webapp</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>现在我们就可以使用<code>yo</code>来创建一个web项目了</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">yo</span> <span class="nx">webapp</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>你可以选择是否使用Bootstrap和Modernizr，需要注意的是Yeoman默认安装的是sass版的bootstrap，所以需要系统安装了ruby和
+compass来编译sass。命令执行完毕之后yeoman也会自动安装好grunt及其用到的plugins</p>
+
+<h2>项目结构</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="p">.</span>
+</span><span class='line'><span class="err">├──</span> <span class="nx">app</span>
+</span><span class='line'><span class="err">│  </span> <span class="err">├──</span> <span class="mi">404</span><span class="p">.</span><span class="nx">html</span>
+</span><span class='line'><span class="err">│  </span> <span class="err">├──</span> <span class="nx">bower_components</span>
+</span><span class='line'><span class="err">│  </span> <span class="err">├──</span> <span class="nx">favicon</span><span class="p">.</span><span class="nx">ico</span>
+</span><span class='line'><span class="err">│  </span> <span class="err">├──</span> <span class="nx">images</span>
+</span><span class='line'><span class="err">│  </span> <span class="err">├──</span> <span class="nx">index</span><span class="p">.</span><span class="nx">html</span>
+</span><span class='line'><span class="err">│  </span> <span class="err">├──</span> <span class="nx">robots</span><span class="p">.</span><span class="nx">txt</span>
+</span><span class='line'><span class="err">│  </span> <span class="err">├──</span> <span class="nx">scripts</span>
+</span><span class='line'><span class="err">│  </span> <span class="err">└──</span> <span class="nx">styles</span>
+</span><span class='line'><span class="err">├──</span> <span class="nx">bower</span><span class="p">.</span><span class="nx">json</span>
+</span><span class='line'><span class="err">├──</span> <span class="nx">Gruntfile</span><span class="p">.</span><span class="nx">js</span>
+</span><span class='line'><span class="err">├──</span> <span class="kr">package</span><span class="p">.</span><span class="nx">json</span>
+</span><span class='line'><span class="err">└──</span> <span class="nx">test</span>
+</span><span class='line'>    <span class="err">├──</span> <span class="nx">index</span><span class="p">.</span><span class="nx">html</span>
+</span><span class='line'>    <span class="err">├──</span> <span class="nx">lib</span>
+</span><span class='line'>    <span class="err">└──</span> <span class="nx">spec</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>执行完<code>yo webapp</code>会产生如上的目录结构，可以看到Yeoman已经为我们生成好了Bower和Grunt需要的配置文件以及node项目默认的<code>package.json</code>，<code>app</code>目录是用来存放前端代码的，<code>app/bower_components</code>存放了项目所依赖的bower package，<code>app\scripts</code>存
+放开发者自己的javascript代码，同理<code>app/styles</code>存放css代码，<code>test</code>存放我们的测试代码</p>
+
+<p>下面我们来运行一下这个项目</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">grunt</span> <span class="nx">server</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>Conclusion</h1>
+
+<p>OK!我们已经如何用Yeoman+Bower+Grunt快速打造一个Vaible的Webapp，心动不如行动，快在你的项目中用起来吧！你会喜欢它的！</p>
+]]></content>
+  </entry>
+  
+</feed>
